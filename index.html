@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Vojtech Aschenbrenner" />
+  <meta name="keywords" content="Aschenbrenner, Vojtech Aschenbrenner, Home Page, Computer Science, MFF, CUNI, Charles University, EPFL, UW-Madison, Wisconsin, Systems, Storage, BUSE" />
+  <meta name="description" content="Vojtech Aschenbrenner’s Home Page" />
+  <title>Vojtech Aschenbrenner’s Home Page</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 0px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  :root {
+      --color1: #ff0000;
+      --color2: #c5050c;
+      --color3: #4b2e83;
+      --color4: #00274c;
+      --color: var(--color2);
+  }
+  h1, h2, h3, h4 {
+      font-variant: small-caps;
+  }
+
+  html {
+      line-height: 1.5;
+      font-size: 20px;
+  }
+
+  body {
+      max-width: 50em;
+      text-align: left;
+      font-family: Cantarell,sans-serif;
+      font-size: 18px;
+  }
+
+  a, a:visited {
+      text-decoration: none;
+      color: var(--color);
+  }
+
+  .alert {
+      background: var(--color);
+      color: white;
+  }
+
+  ::selection {
+      background: var(--color);
+      color: white;
+  }
+
+  .pronounce {
+      font-size: 18px;
+      font-weight: normal;
+      font-style: italic;
+      white-space: nowrap;
+      font-variant: none;
+  }
+
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BT9Y8C2K41"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BT9Y8C2K41');
+  </script>
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2627d62bcba846829f98e67b584c5bd2"}'></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="vojtech-aschenbrenner">Vojtech Aschenbrenner</h1>
+<p><code>asch@cs.wisc.edu</code><br />
+<code>Morgridge Hall 4351</code></p>
+<h2 id="now">Now</h2>
+<ul>
+<li><strong><a href="#publications">Researching</a></strong> computer systems.
+<ul>
+<li><a href="#trio">Trio</a> (SOSP ’23 Best Paper Award).</li>
+<li><a href="#dis">DIS/LSVD</a> (EUROSYS ’22).</li>
+<li><a href="#buse">BUSE/BS3</a> (Best Software Thesis Award ’21).</li>
+</ul></li>
+<li><strong><a href="#teaching">Teaching</a></strong> about computer systems.</li>
+<li>Trying to improve Czech academia by writing:
+<ul>
+<li><strong><a href="phd">Why and how to do PhD abroad</a></strong> for Czech students, and</li>
+<li><strong>Why you should hire Czech students (and which ones)</strong> for foreign professors (coming soon).</li>
+</ul></li>
+</ul>
+<h2 id="before">Before</h2>
+<ul>
+<li>Spent a wonderful year in <a href="https://rs3lab.github.io">RS3Lab</a> at <a href="https://epfl.ch/en">EPFL</a> working on scalable storage stack for heterogeneous HW.<br />
+<em>Advised by <a href="https://sanidhya.github.io">Prof. Sanidhya Kashyap</a> and worked closely with <a href="https://zhou-diyu.github.io">Dr. Diyu Zhou</a>.</em></li>
+<li>Was a <a href="https://www.mff.cuni.cz/cs/fakulta/organizacni-struktura/lide?hdl=12192">lecturer</a> at <a href="https://www.mff.cuni.cz/en/">Charles University</a> (<a href="https://d3s.mff.cuni.cz/">Dept. of Distributed and Dependable Systems</a>).<br />
+</li>
+<li>Had a business on building customized servers and open-source software deployment.<br />
+<em>I deployed dozens of customized large storage systems together with QEMU/KVM-based solutions.</em></li>
+<li>Was a systems engineer (storage and networking). Also interned at <a href="https://www.redhat.com">Red Hat</a> twice.</li>
+<li>Converted to systems research from AI/ML.</li>
+<li>Was lucky to work with professors
+<ul>
+<li><a href="https://sanidhya.github.io">Sanidhya Kashyap</a> from <a href="https://epfl.ch/en">EPFL</a>,</li>
+<li><a href="https://www.ccs.neu.edu/home/pjd">Peter Desnoyers</a> from <a href="https://www.khoury.northeastern.edu">Northeastern University</a>,</li>
+<li><a href="https://d3s.mff.cuni.cz/people/petrtuma/">Petr Tuma</a> from <a href="https://www.mff.cuni.cz/en">Charles University</a> and</li>
+<li><a href="https://ida.fel.cvut.cz/~kuzelka">Ondrej Kuzelka</a> and <a href="http://ida.felk.cvut.cz/zelezny">Filip Zelezny</a> from <a href="https://cs.fel.cvut.cz/">Czech Technical University in Prague</a>.</li>
+</ul></li>
+<li>Obtained degrees with miscellaneous honors from
+<ul>
+<li><a href="https://www.cs.wisc.edu/">University of Wisconsin–Madison</a>,</li>
+<li><a href="https://www.mff.cuni.cz/en/">Charles University</a>,</li>
+<li><a href="https://cs.fel.cvut.cz/">Czech Technical University in Prague</a> and</li>
+<li><a href="https://www.fit.vut.cz/en/">Brno University of Technology</a>.</li>
+</ul></li>
+</ul>
+<h2 id="research-interests">Research Interests</h2>
+<ul>
+<li>Operating Systems, Storage, Networking and Computer Architecture.<br />
+<em>With a particular focus on high-performance I/O.</em></li>
+<li>Artificial Intelligence and Machine Learning in the previous life.</li>
+</ul>
+<h2 id="publications">Publications</h2>
+<p>[<a href="https://scholar.google.cz/citations?user=pFO-sVQAAAAJ">Google Scholar</a>]
+[<a href="https://github.com/asch">GitHub</a>]</p>
+<h3 id="conferences-and-journals">Conferences and Journals</h3>
+<ul>
+<li><p><strong>Enabling High-Performance and Secure Userspace NVM File Systems with the Trio Architecture</strong> <a name="trio"></a><br />
+Diyu Zhou, Vojtech Aschenbrenner, Tao Lyu, Jian Zhang, Sudarsun Kannan, Sanidhya Kashyap<br />
+<em>ACM Symposium on Operating Systems Principles</em>
+<em>(<a href="https://sosp2023.mpi-sws.org">SOSP ’23</a>)</em><br />
+<a href="pubs/23-sosp.pdf">pdf</a>
+·
+<a href="https://github.com/vmexit/trio-sosp23-ae">code</a>
+·
+<span class="alert">Best Paper Award</span></p></li>
+<li><p><strong>Beating the I/O bottleneck: A case for log-structured virtual disks</strong> <a name="dis"></a><br />
+Mohammad Hossein Hajkazemi*, Vojtech Aschenbrenner*, Mania Abdi, Emine Ugur Kaynar, Amin Mossayebzadeh, Orran Krieger, Peter Desnoyers (* Joint first authors)<br />
+<em>ACM European Conference on Computer Systems</em>
+<em>(<a href="http://2022.eurosys.org">EUROSYS ’22</a>)</em><br />
+<a href="pubs/22-eurosys.pdf">pdf</a>
+·
+<a href="https://github.com/asch/dis">code</a></p></li>
+<li><p><strong>LSDN — Manage complex (virtual) networks in cloud environment with Linux kernel facilities</strong><br />
+Vojtech Aschenbrenner, Roman Kapl, Jan Matejek, Adam Vyskovsky<br />
+<em>Technical Conference on Linux Networking</em>
+<em>(<a href="https://legacy.netdevconf.info/0x12/">NETDEV ’18</a>)</em><br />
+<a href="pubs/18-netdev.pdf">pdf</a>
+·
+<a href="https://github.com/asch/lsdn">code</a>
+·
+<a href="slides/18-netdev.pdf">slides</a>
+·
+<a href="https://www.youtube.com/watch?v=FcUNp1IjV10">talk</a></p></li>
+<li><p><strong>Lifted relational neural networks: Efficient learning of latent relational structures</strong><br />
+Gustav Sourek, Vojtech Aschenbrenner, Filip Zelezny, Steven Schockaert, Ondrej Kuzelka<br />
+<em>Journal of Artificial Intelligence Research</em>
+<em>(<a href="https://www.jair.org/index.php/jair/issue/view/1150">JAIR ’18</a>)</em><br />
+<a href="pubs/18-jair.pdf">pdf</a>
+·
+<a href="https://github.com/GustikS/NeuraLogic">code</a></p></li>
+</ul>
+<h3 id="workshops">Workshops</h3>
+<ul>
+<li><p><strong>Lifted relational neural networks</strong><br />
+Gustav Sourek, Vojtech Aschenbrenner, Filip Zelezny, Ondrej Kuzelka<br />
+<em>NIPS Workshop on Cognitive Computation: Integrating Neural and Symbolic Approaches</em>
+<em>(COCO@NIPS ’15)</em><br />
+<a href="pubs/15-coco.pdf">pdf</a>
+·
+<a href="https://github.com/asch/Neurologic">code</a></p></li>
+<li><p><strong>Horn-clause neural networks</strong><br />
+Vojtech Aschenbrenner, Ondrej Kuzelka<br />
+<em>IEEE ICSC Workshop on Semantic Machine Learning</em>
+<em>(SML ’14)</em><br />
+<a href="pubs/14-sml.pdf">pdf</a>
+·
+<a href="https://github.com/asch/Neurologic">code</a></p></li>
+</ul>
+<h3 id="theses">Theses</h3>
+<ul>
+<li><p><strong>BUSE: Block Device in Userspace</strong> (Includes BS3) <a name="buse"></a><br />
+Master Thesis, Charles University<br />
+<span class="alert">Best software thesis award</span><br />
+<em>Real world impact in academia and industry</em><br />
+<a href="pubs/21-cuni.pdf">pdf</a>
+·
+<a href="https://github.com/asch/buse">code (buse)</a>
+·
+<a href="https://github.com/asch/bs3">code (bs3)</a></p></li>
+<li><p><strong>Deep Relational Learning with Predicate Invention</strong><br />
+Master Thesis, Czech Technical University in Prague<br />
+<span class="alert">Published in JAIR</span><br />
+<a href="pubs/13-ctu.pdf">pdf</a>
+·
+<a href="https://github.com/asch/Neurologic">code</a></p></li>
+<li><p><strong>Automated Tool-Chain Testing System</strong><br />
+Bachelor Thesis, Brno University of Technology<br />
+<span class="alert">Dean’s price for excellent thesis</span></p></li>
+</ul>
+<h2 id="professional-activities">Professional Activities</h2>
+<ul>
+<li><a href="https://sysartifacts.github.io/sosp2024/organizers">SOSP ’24 AEC</a></li>
+<li><a href="https://www.usenix.org/conference/osdi23/call-for-artifacts">OSDI ’23 AEC</a></li>
+<li><a href="https://www.usenix.org/conference/atc23/call-for-artifacts">ATC ’23 AEC</a></li>
+<li><a href="https://sysartifacts.github.io/eurosys2023/organizers">EUROSYS ’23 AEC</a></li>
+<li><a href="https://www.microarch.org/micro55/submit/artifacts.php">MICRO ’22 AEC</a></li>
+<li><a href="https://www.usenix.org/conference/osdi22/call-for-artifacts">OSDI ’22 AEC</a></li>
+<li><a href="https://www.usenix.org/conference/atc22/call-for-artifacts">ATC ’22 AEC</a></li>
+</ul>
+<h2 id="teaching">Teaching</h2>
+<h3 id="uwmadison-usa">UW–Madison, USA</h3>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Course</th>
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Terms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Introduction to Operating Systems</td>
+<td style="text-align: left;">CS 537</td>
+<td style="text-align: left;">TA</td>
+<td style="text-align: left;">Falls ’23, ’24</td>
+</tr>
+<tr>
+<td style="text-align: left;">Machine Organization and Programming</td>
+<td style="text-align: left;">CS 354</td>
+<td style="text-align: left;">EPIC TA</td>
+<td style="text-align: left;">Springs ’24, ’25</td>
+</tr>
+</tbody>
+</table>
+<h3 id="epfl-switzerland">EPFL, Switzerland</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Course</th>
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Terms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parallelism and Concurrency</td>
+<td style="text-align: left;">CS-206</td>
+<td style="text-align: left;">TA</td>
+<td style="text-align: left;">Spring ’23</td>
+</tr>
+<tr>
+<td style="text-align: left;">Master Semester Project</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Mentor</td>
+<td style="text-align: left;">Spring ’23</td>
+</tr>
+<tr>
+<td style="text-align: left;">Introduction to Operating Systems</td>
+<td style="text-align: left;">CS-323</td>
+<td style="text-align: left;">Head TA</td>
+<td style="text-align: left;">Fall ’22</td>
+</tr>
+</tbody>
+</table>
+<h3 id="charles-university-czech-republic">Charles University, Czech Republic</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Course</th>
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Terms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Linux Administration</td>
+<td style="text-align: left;">NSWI106</td>
+<td style="text-align: left;">Main Instructor</td>
+<td style="text-align: left;">Falls ’18, ’19, ’20, ’21</td>
+</tr>
+<tr>
+<td style="text-align: left;">Introduction to Linux</td>
+<td style="text-align: left;">NSWI177</td>
+<td style="text-align: left;">Labs Instructor</td>
+<td style="text-align: left;">Springs ’19, ’20</td>
+</tr>
+<tr>
+<td style="text-align: left;">Programming in Python</td>
+<td style="text-align: left;">NPRG065</td>
+<td style="text-align: left;">Labs Instructor</td>
+<td style="text-align: left;">Spring ’19</td>
+</tr>
+</tbody>
+</table>
+<p align="right">
+<em>Page optimized for text-based web browsers.</em>
+</p>
+</body>
+</html>
